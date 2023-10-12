@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap');
+
+
+:root {
+    --font-principal: "Orbitron", sans-serif;
+    --color-primary: #175cff;
+    --font-color-timer: #333;
+    --font-color-time: #172953;
+    --color-secundary: #525763;
+    --color-border: #ccc;
+    --bg-color-primary: #f1f1f1;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal)
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.container h1 {
+    color: var(--color-primary);
+}
+
+.timer {
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--font-color-timer);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: var(--font-color-time);
+    min-width: 90px;
+}
+
+.separator {
+    padding: 0 10px;
+    color: var(--color-secundary);
+}
+
+#milliseconds {
+    font-size: 30px;
+    color: var(--color-secundary);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#startbtn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#pausebtn,
+#resumebtn {
+    display: none;
+}
